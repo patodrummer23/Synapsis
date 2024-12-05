@@ -20,16 +20,17 @@ header {
 
             li {
                 display: inline-block;
-                }
+            }
 
-                a {
-                    text-decoration: none;
-                    color: rgb(255, 255, 255);
-                    margin: 12px;
-                    margin-bottom: 10px;
-                    font-size: x-large;
-                    &:hover{
-                        color: rgb(255, 0, 191);
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                margin: 12px;
+                margin-bottom: 10px;
+                font-size: x-large;
+
+                &:hover {
+                    color: rgb(255, 0, 191);
                 }
             }
         }
@@ -90,7 +91,8 @@ header {
         text-decoration: underline;
         font-size: x-large;
         font-weight: 500;
-        &:hover{
+
+        &:hover {
             color: rgb(255, 0, 191);
         }
     }
@@ -154,8 +156,8 @@ header {
         color: rgb(255, 255, 255);
         font-size: x-large;
         font-weight: 500;
-        &:hover{
-            color: rgb(255, 0, 191); 
+        &:hover {
+            color: rgb(255, 0, 191);
         }
     }
 
@@ -190,6 +192,36 @@ header {
     display: grid;
     grid-template-columns: (4, 0.25fr);
     margin-top: 70px;
+
+    div {
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.grid-clientes div {
+    position: relative;
+}
+
+.img-1 {
+    grid-column: 1;
+}
+
+.img-2 {
+    grid-column: 2;
+}
+
+.img-3 {
+    grid-column: 3;
+}
+
+.img-4 {
+    grid-column: 4;
 }
 
 .nosotros {
@@ -256,7 +288,8 @@ header {
             color: rgb(255, 255, 255);
             font-size: x-large;
             font-weight: 500;
-            &:hover{
+
+            &:hover {
                 color: rgb(255, 0, 191);
             }
         }

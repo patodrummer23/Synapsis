@@ -168,6 +168,33 @@ header nav ul a:hover {
   grid-template-columns: 4, 0.25fr;
   margin-top: 70px;
 }
+.grid-clientes div img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.grid-clientes div {
+  position: relative;
+}
+
+.img-1 {
+  grid-column: 1;
+}
+
+.img-2 {
+  grid-column: 2;
+}
+
+.img-3 {
+  grid-column: 3;
+}
+
+.img-4 {
+  grid-column: 4;
+}
 
 .nosotros {
   box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
