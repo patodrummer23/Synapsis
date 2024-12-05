@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,80 +12,6 @@
 body {
     font-family: "Plus Jakarta Sans"
 }
-
-@media screen and (max-height: 720px) and (max-width: 360px) {
-    body {
-        height: 720px;
-    }
-
-    header {
-        height: auto;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        text-align: justify;
-
-    }
-
-    .hero {
-        height: auto;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-    }
-
-    .hero h2 {
-        font-size: 16px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .servicios {
-        height: auto;
-
-    }
-
-    .servicios .tarjeta div {
-        flex-direction: column;
-        width: 100%;
-        margin: 10px;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .tarjeta-clientes div {
-        flex-direction: column;
-        width: 100%;
-        margin: 10px;
-        align-items: center;
-        gap: 10px
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    footer img {
-        width: 180px;
-        height: auto;
-        margin: 10px;
-    }
-
-    .fixed img {
-        width: 30px;
-        height: 30px;
-        height: auto;
-    }
-}
-
 
 header img {
     width: 250px;
@@ -102,7 +28,6 @@ header {
     background: linear-gradient(215deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(215deg, #5455a2 0%, #000000 80%);
-    height: auto;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -123,6 +48,7 @@ header nav ul li a {
     color: rgb(255, 255, 255);
     margin: 12px;
     margin-bottom: 10px;
+    font-size: x-large;
 }
 
 @media screen and (max-width: 360px) {
@@ -139,9 +65,16 @@ header nav ul li a {
 
 }
 
+@media screen and (max-height: 720px) and (max-width: 360px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+    }
+}
+
 .hero {
-    text-align: center;
-    height:auto;
     background-image: url("../img/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.avif");
     background-position: center;
     background-repeat: no-repeat;
@@ -150,6 +83,7 @@ header nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
 }
 
 .hero h1 {
@@ -167,25 +101,40 @@ header nav ul li a {
     font-size: 25px;
     color: white;
     font-weight: 500;
-    margin: 10p;
+    margin: 10px;
 }
 
-.hero {
-    color: aliceblue;
-}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+
+    .hero {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}    
 
 .servicios {
     text-align: center;
-    background: #5455a2;
-    background-repeat: no-repeat;
     background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
+
 }
 
 .servicios h1 {
     color: white;
-    margin-top: 20px;
 }
 
 .servicios p {
@@ -227,19 +176,30 @@ header nav ul li a {
 
 
 .servicios .tarjeta div {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(8, 8, 8);
+    background-color: aliceblue;
     box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
-    background-color: aliceblue;
     width: 165px;
     height: 252px;
     margin: 5px;
     padding: 1px;
     margin-top: 40px;
-    gap: 20px;
+
 }
+
+@media screen and (max-height: 720px) and (max-width: 360px) {
+
+ 
+    .servicios .tarjeta div {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        flex-wrap: wrap;
+    }    
+} 
 
 .clientes {
     text-align: center;
@@ -247,10 +207,10 @@ header nav ul li a {
     background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
-    height: auto;
+    overflow: hidden;
 }
 
-.clientes1 h2 {
+.clientes h2 {
     color: white;
 }
 
@@ -301,6 +261,7 @@ header nav ul li a {
     object-fit: cover;
     gap: 10px;
     flex-wrap: wrap;
+    
 }
 
 .grid-clientes div {
@@ -340,11 +301,19 @@ header nav ul li a {
 
 .clientes h1 {
     color: white;
-}
-
-.nosotros {
     text-align: center;
 }
+
+@media screen and (max-height: 720px) and (max-width: 360px) {
+
+ .tarjeta-clientes div {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+        align-items: center;
+        gap: 10px
+    }
+}    
 
 .nosotros {
     box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -358,26 +327,85 @@ header nav ul li a {
     background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
-    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
-
-.nosotros a {
-    padding: 4px;
-    text-decoration: none;
-    margin-top: 10px;
+.nosotros h1 {
     color: white;
-    text-decoration: underline;
+    text-align: start;
+    flex-direction: row;
 }
 
-.nosotros a:hover {
+.nosotros div img {
+    display: block;
+    flex-direction: row-reverse;
+}
+.nosotrosh2 {
+    box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+    font-size: x-large;
+    font-weight: 500;
+    background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
+    background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
+    background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.nosotrosh2 h2 {
+    color: white;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.nosotrosh2 div a {
+    padding: 1px;
+    margin-top: 30px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: 500;
+
+}
+
+.nosotrosh2 div a:hover {
     color: rgb(255, 0, 191);
 }
 
+@media (max-width: 360px) and (max-height: 720px) {
+.nosotrosh2 h2 {
+    font-size: small; 
+    text-align: center;
+}
+
+.nosotrosh2 a {
+    font-size: small; 
+    text-align: center;
+    flex-direction: column;
+}
+.nosotros h1 {
+    font-size: small;
+}
+.nosotros div img {
+    flex-direction: column-reverse;
+    width: 200px;
+}
+}
 .contacto {
     background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
-    height: auto;
+    overflow: hidden;
 }
 
 .contacto h1 {
@@ -385,9 +413,34 @@ header nav ul li a {
     font-size: xx-large;
 }
 
+
 .contacto label {
     color: white;
 }
+
+@media (max-width: 360px) and (max-height: 720px) {
+
+
+    .contacto h1 {
+        font-size: small; 
+    }
+
+    .contacto h2 {
+        font-size: small;
+    }
+
+  
+    .contacto label {
+        font-size: small; 
+    }
+
+    .contacto div img {
+        flex-direction: column;
+        width: 300px;
+        margin: 10px 10px 10px 10px;
+
+    }
+}    
 
 .fixed {
     position: fixed;
@@ -399,23 +452,28 @@ header nav ul li a {
     width: 60px;
 }
 
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  
+    .fixed img {
+        width: 30px;
+        height: 30px;
+        height: auto;
+    }
+}
+
 
 footer {
     background: #5455a2;
     background: linear-gradient(215deg, #5455a2 0%, #000000 80%);
     background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(215deg, #5455a2 0%, #000000 80%);
-    height: auto;
     padding: 10px;
-
-}
-
-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 20px 10px;
+
 }
 
 footer div img {
@@ -427,40 +485,49 @@ footer div img {
 
 footer iframe {
     width: 200px;
-    height: auto;
     display: block;
 }
 
 footer img {
     width: 250px;
-    height: auto;
     padding: 0px;
 }
 
-.servicios1 div img {
+@media screen and (max-height: 720px) and (max-width: 360px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    footer img {
+        width: 180px;
+        margin: 10px;
+    }
+}
+
+
+footer .servicios1 div img {
     width: 50px;
-    height: auto;
     margin-top: 10px;
     padding: 0px;
 }
 
-.nosotros1 div img {
+footer .nosotros1 div img {
     width: 50px;
-    height: auto;
     margin-top: 10px;
     padding: 0px;
 }
 
-.contacto1 div img {
+footer .contacto1 div img {
     width: 50px;
-    height: auto;
     margin-top: 10px;
     padding: 0px;
 }
 
-.clientes1 div img {
+footer .clientes1 div img {
     width: 50px;
-    height: auto;
     margin-top: 10px;
     padding: 0px;
 }
