@@ -1,12 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+}
+
 header {
   background: linear-gradient(215deg, #5455a2 0%, #000000 80%);
   background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
   background: -moz-linear-gradient(215deg, #5455a2 0%, #000000 80%);
-  height: auto;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 header img {
   width: 250px;
@@ -24,7 +35,7 @@ header nav ul a {
   color: rgb(255, 255, 255);
   margin: 12px;
   margin-bottom: 10px;
-  font-size: x-large;
+  font-size: large;
 }
 header nav ul a:hover {
   color: rgb(255, 0, 191);
@@ -62,9 +73,11 @@ header nav ul a:hover {
   background: linear-gradient(161deg, #5455a2 0%, #000000 80%);
   background: -webkit-linear-gradient(161deg, #5455a2 0%, #000000 80%);
   background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
+  overflow: hidden;
 }
 .servicios h1 {
   color: white;
+  padding: 20px;
 }
 .servicios p {
   color: white;
@@ -86,6 +99,9 @@ header nav ul a:hover {
 .servicios div img {
   width: 160px;
   height: 150px;
+}
+.servicios div h3 {
+  text-align: center;
 }
 
 .servicios1 h2 {
@@ -111,6 +127,9 @@ header nav ul a:hover {
   padding: 1px;
   margin-top: 40px;
 }
+.servicios .tarjeta h3 {
+  text-align: center;
+}
 
 .clientes {
   text-align: center;
@@ -122,6 +141,7 @@ header nav ul a:hover {
 }
 .clientes h2 {
   color: white;
+  padding-top: 10px;
 }
 .clientes div img {
   width: 160px;
@@ -145,7 +165,7 @@ header nav ul a:hover {
 
 .clientes .tarjeta-clientes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -239,12 +259,15 @@ header nav ul a:hover {
   background: -moz-linear-gradient(161deg, #5455a2 0%, #000000 80%);
   overflow: hidden;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  text-align: justify;
   gap: 20px;
+  padding-bottom: 30px;
 }
 .nosotrosh2 h2 {
   color: white;
-  text-align: start;
+  text-align: center;
   margin-top: 40px;
 }
 .nosotrosh2 div a {
@@ -254,6 +277,7 @@ header nav ul a:hover {
   color: rgb(255, 255, 255);
   font-size: x-large;
   font-weight: 500;
+  justify-content: end;
 }
 .nosotrosh2 div a:hover {
   color: rgb(255, 0, 191);
@@ -287,7 +311,11 @@ footer {
   background: linear-gradient(215deg, #5455a2 0%, #000000 80%);
   background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
   background: -moz-linear-gradient(215deg, #5455a2 0%, #000000 80%);
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
 }
 footer div img {
   width: 50px;
@@ -322,6 +350,122 @@ footer .clientes1 div img {
   width: 50px;
   margin-top: 10px;
   padding: 0px;
+}
+
+@media screen and (max-width: 360px) and (max-height: 720px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  .hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero h2 {
+    font-size: 16px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  .servicios .tarjeta div {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .grid-clientes {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  .tarjeta-clientes div {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 360px) and (max-height: 720px) {
+  .nosotrosh2 h2 {
+    font-size: small;
+    text-align: center;
+  }
+  .nosotrosh2 a {
+    font-size: small;
+    text-align: center;
+    flex-direction: column;
+  }
+  .nosotros h1 {
+    font-size: small;
+  }
+  .nosotros div img {
+    flex-direction: column-reverse;
+    width: 190px;
+  }
+}
+@media (max-width: 360px) and (max-height: 720px) {
+  .contacto h1 {
+    font-size: small;
+  }
+  .contacto h2 {
+    font-size: small;
+  }
+  .contacto label {
+    font-size: small;
+  }
+  .contacto div img {
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  .fixed img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 360px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  footer img {
+    width: 180px;
+    margin: 10px;
+  }
+  footer iframe {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
