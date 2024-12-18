@@ -29,9 +29,9 @@
     <section class="contacto">
       <div>
         <h1>Registro</h1>
-        <form class="row g-3">
+        <form class="col g-3">
           <div class="col-md-4">
-            <label for="validationServer01" class="form-label">Nombre</label>
+            <label for="validationServer01" class="form-label">Nombre Completo</label>
             <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
             <div class="valid-feedback">
               Bien hecho!
@@ -63,6 +63,13 @@
               Por favor seleccione una ciudad valida.
             </div>
           </div>
+          <div class="col-md-7">
+            <label for="validationServer03" class="form-label">Codigo Postal</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03"
+              aria-describedby="validationServer03Feedback" required>
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              
+            </div>
           <div class="col-md-3">
             <label for="validationServer04" class="form-label"></label>
             <div id="validationServer04Feedback" class="invalid-feedback">
@@ -82,8 +89,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Enviar</button>
+      <div class="button">
+        <button class="btn btn" type=>Enviar</button>
       </div>
       </form>
   </main>

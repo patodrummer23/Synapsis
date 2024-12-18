@@ -1,0 +1,38 @@
+header {
+    background: linear-gradient(215deg, #5455a2 0%, #000000 80%);
+    background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
+    background: -moz-linear-gradient(215deg, rgb(84, 85, 162) 0%, #000000 80%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 110px;
+        height: 110px;
+        padding: 0px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                margin: 12px;
+                margin-bottom: 10px;
+                font-size: medium;
+                &:hover {
+                    color: rgb(255, 0, 191);
+                }
+             }
+        }
+    }
+}
+

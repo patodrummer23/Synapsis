@@ -2,8 +2,9 @@
 
     header nav ul {
             flex-direction: column;
-            align-items: flex-end;
-            padding-left: 0;
+            align-items: start;
+            justify-content: space-around;
+            padding-left: 100px;
         }
     
     header nav ul li {
