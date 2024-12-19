@@ -112,6 +112,7 @@ header nav ul a:hover {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1px;
 }
 .servicios .tarjeta div {
   border: 1px solid black;
@@ -123,7 +124,7 @@ header nav ul a:hover {
   width: 165px;
   height: 252px;
   margin: 5px;
-  padding: 10px;
+  padding: 1px;
   margin-top: 40px;
 }
 .servicios .tarjeta h3 {
