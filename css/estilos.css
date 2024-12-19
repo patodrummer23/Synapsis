@@ -31,7 +31,7 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   margin: 12px;
   margin-bottom: 10px;
   font-size: medium;
@@ -49,7 +49,7 @@ header nav ul a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: white;
 }
 .hero h1 {
   font-size: 40px;
@@ -73,19 +73,20 @@ header nav ul a:hover {
   overflow: hidden;
 }
 .servicios h1 {
-  color: rgba(0, 0, 0, 0.966);
+  color: black;
   padding: 10px;
 }
 .servicios p {
-  color: rgb(0, 0, 0);
+  color: black;
   margin-top: 20px;
+  font-size: 20px;
 }
 .servicios a {
   margin-top: 30px;
   padding: 0px;
   list-style: square;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: underline;
   font-size: x-large;
   font-weight: 500;
@@ -102,7 +103,8 @@ header nav ul a:hover {
 }
 
 .servicios1 h2 {
-  color: rgb(0, 0, 0);
+  color: black;
+  font-size: 30px;
 }
 
 .servicios .tarjeta {
@@ -112,16 +114,16 @@ header nav ul a:hover {
   flex-wrap: wrap;
 }
 .servicios .tarjeta div {
-  border: 1px solid rgb(8, 8, 8);
-  background-color: aliceblue;
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 4px 3px 5px 0px black;
+  -webkit-box-shadow: 4px 3px 5px 0px black;
+  -moz-box-shadow: 4px 3px 5px 0px black;
   text-align: center;
   width: 165px;
   height: 252px;
   margin: 5px;
-  padding: 1px;
+  padding: 10px;
   margin-top: 40px;
 }
 .servicios .tarjeta h3 {
@@ -134,7 +136,7 @@ header nav ul a:hover {
   overflow: hidden;
 }
 .clientes h1 {
-  color: rgb(5, 0, 0);
+  color: black;
   padding: 10px;
 }
 .clientes div img {
@@ -145,7 +147,7 @@ header nav ul a:hover {
   padding: 1px;
   margin-top: 30px;
   text-decoration: underline;
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: x-large;
   font-weight: 500;
 }
@@ -153,7 +155,7 @@ header nav ul a:hover {
   color: rgb(255, 0, 191);
 }
 .clientes h2 {
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: center;
 }
 
@@ -164,11 +166,11 @@ header nav ul a:hover {
   flex-wrap: wrap;
 }
 .clientes .tarjeta-clientes div {
-  border: 1px solid rgb(8, 8, 8);
-  background-color: aliceblue;
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 4px 3px 5px 0px black;
+  -webkit-box-shadow: 4px 3px 5px 0px black;
+  -moz-box-shadow: 4px 3px 5px 0px black;
   text-align: center;
   width: 165px;
   height: 252px;
@@ -192,6 +194,7 @@ header nav ul a:hover {
 
 .grid-clientes div {
   position: relative;
+  padding: 10px;
 }
 
 .img-1 {
@@ -211,14 +214,14 @@ header nav ul a:hover {
 }
 
 .nosotros {
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 5px 0px black;
+  -webkit-box-shadow: 4px 3px 5px 0px black;
+  -moz-box-shadow: 4px 3px 5px 0px black;
   padding: 5px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: x-large;
-  font-weight: 500;
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
   background-color: rgb(195, 216, 223);
   overflow: hidden;
   display: flex;
@@ -228,25 +231,27 @@ header nav ul a:hover {
   text-align: center;
 }
 .nosotros h1 {
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: start;
   flex-direction: row;
   padding: 10px;
+  font-size: 25px;
 }
 .nosotros div img {
   display: block;
   flex-direction: row-reverse;
+  margin-right: 10px;
 }
 
 .nosotrosh2 {
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 5px 0px black;
+  -webkit-box-shadow: 4px 3px 5px 0px black;
+  -moz-box-shadow: 4px 3px 5px 0px black;
   padding: 5px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: x-large;
-  font-weight: 500;
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
   background-color: rgb(195, 216, 223);
   overflow: hidden;
   display: flex;
@@ -257,19 +262,21 @@ header nav ul a:hover {
   padding-bottom: 30px;
 }
 .nosotrosh2 h2 {
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: center;
   margin-top: 40px;
   padding: 10px;
+  font-size: 25px;
 }
 .nosotrosh2 div a {
   padding: 1px;
   margin-top: 30px;
   text-decoration: underline;
-  color: rgb(0, 0, 0);
-  font-size: x-large;
-  font-weight: 500;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
   justify-content: end;
+  margin-right: 10px;
 }
 .nosotrosh2 div a:hover {
   color: rgb(255, 0, 191);
@@ -280,16 +287,16 @@ header nav ul a:hover {
   overflow: hidden;
 }
 .contacto h1 {
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: xx-large;
   padding: 15px;
 }
 .contacto label {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 .contacto div button {
-  background-color: rgb(84, 85, 162);
+  background-color: rgb(195, 216, 223);
   color: black;
   margin: 10px;
 }
@@ -328,7 +335,7 @@ header nav ul a:hover {
 .clientes1 div img {
   width: 50px;
   margin-top: 10px;
-  padding: 0px;
+  padding: 10px;
 }
 
 footer {
@@ -350,10 +357,11 @@ footer div img {
 }
 footer iframe {
   width: 200px;
+  height: 180px;
   display: block;
 }
 footer img {
-  width: 250px;
+  width: 150px;
   padding: 0px;
 }
 
@@ -370,6 +378,7 @@ footer img {
 }
 @media screen and (max-height: 720px) and (max-width: 360px) {
   header {
+    max-height: fit-content;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -395,7 +404,7 @@ footer img {
 @media screen and (max-height: 720px) and (max-width: 360px) {
   .servicios .tarjeta div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
     flex-wrap: wrap;
     text-align: center;
@@ -403,8 +412,14 @@ footer img {
 }
 @media screen and (max-width: 360px) {
   .grid-clientes {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: -0.5px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-height: 720px) and (max-width: 360px) {
@@ -486,6 +501,7 @@ footer img {
 }
 @media screen and (max-height: 720px) and (max-width: 360px) {
   header {
+    max-height: fit-content;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -511,7 +527,7 @@ footer img {
 @media screen and (max-height: 720px) and (max-width: 360px) {
   .servicios .tarjeta div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
     flex-wrap: wrap;
     text-align: center;
@@ -519,8 +535,14 @@ footer img {
 }
 @media screen and (max-width: 360px) {
   .grid-clientes {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: -0.5px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-height: 720px) and (max-width: 360px) {
