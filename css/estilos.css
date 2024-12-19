@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+.clientes .tarjeta-clientes, .servicios .tarjeta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +100,7 @@ header nav ul a:hover {
   text-decoration: none;
   color: black;
   text-decoration: underline;
-  font-size: x-large;
+  font-size: 30px;
   font-weight: 500;
 }
 .servicios a:hover {
@@ -98,7 +110,7 @@ header nav ul a:hover {
   width: 160px;
   height: 150px;
 }
-.servicios div h3 {
+.servicios div h2 {
   text-align: center;
 }
 
@@ -108,11 +120,8 @@ header nav ul a:hover {
 }
 
 .servicios .tarjeta {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 1px;
+  padding: 10px;
 }
 .servicios .tarjeta div {
   border: 1px solid black;
@@ -149,7 +158,7 @@ header nav ul a:hover {
   margin-top: 30px;
   text-decoration: underline;
   color: black;
-  font-size: x-large;
+  font-size: 30px;
   font-weight: 500;
 }
 .clientes a:hover {
@@ -161,10 +170,8 @@ header nav ul a:hover {
 }
 
 .clientes .tarjeta-clientes {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
+  padding: 12px;
 }
 .clientes .tarjeta-clientes div {
   border: 1px solid black;
@@ -183,7 +190,7 @@ header nav ul a:hover {
 .grid-clientes {
   display: grid;
   grid-template-columns: 4, 0.25fr;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .grid-clientes div img {
   width: 80px;
@@ -195,7 +202,7 @@ header nav ul a:hover {
 
 .grid-clientes div {
   position: relative;
-  padding: 10px;
+  padding: 20px;
 }
 
 .img-1 {
@@ -259,6 +266,7 @@ header nav ul a:hover {
   justify-content: space-around;
   align-items: center;
   text-align: justify;
+  flex-direction: column;
   gap: 20px;
   padding-bottom: 30px;
 }
@@ -274,8 +282,8 @@ header nav ul a:hover {
   margin-top: 30px;
   text-decoration: underline;
   color: black;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 30px;
+  font-weight: 500;
   justify-content: end;
   margin-right: 10px;
 }
@@ -349,6 +357,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px 10px;
+  width: 100%;
 }
 footer div img {
   width: 50px;
@@ -462,7 +471,7 @@ footer img {
   }
   .contacto div img {
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     margin: 10px 10px 10px 10px;
   }
 }
@@ -478,6 +487,7 @@ footer img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
     padding: 15px;
   }
   footer img {
@@ -485,8 +495,8 @@ footer img {
     margin: 10px;
   }
   footer iframe {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 }
 @media screen and (max-width: 360px) and (max-height: 720px) {
@@ -585,7 +595,7 @@ footer img {
   }
   .contacto div img {
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     margin: 10px 10px 10px 10px;
   }
 }
@@ -601,6 +611,7 @@ footer img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
     padding: 15px;
   }
   footer img {
@@ -608,8 +619,8 @@ footer img {
     margin: 10px;
   }
   footer iframe {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 }
 

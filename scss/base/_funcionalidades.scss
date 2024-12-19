@@ -5,3 +5,24 @@ $color-3: rgb(195, 216, 223);
 $color-4: rgb(255, 0, 191);
 
 
+//*listas
+$colores: white, black, rgb(195, 216, 223), rgb(255, 0, 191);
+$font-size: 15px, 20px, 30px;
+
+//* extends
+%center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+//* mixin
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.nosotros {
+    @include flex (flex, space-around, center)
+}
