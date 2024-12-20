@@ -4,7 +4,7 @@ footer {
     background: -webkit-linear-gradient(215deg, #5455a2 0%, #000000 80%);
     background: -moz-linear-gradient(215deg, #5455a2 0%, #000000 80%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 20px 10px;
@@ -23,6 +23,8 @@ footer {
         width: 200px;
         height: 180px;
         display: block;
+        overflow-x: hidden;
+        position: relative;
     }
 
     img {
