@@ -28,37 +28,39 @@
     }
 }
 
+
 .servicios {
     text-align: center;
     background-color: $color-3;
     overflow: hidden;
-    
+    height: 500px;    
     h1 {
         color: $color-2;
         padding: 10px;
-        
-        
-        
     }
-
-    p {
+      
+     p {
         color: $color-2;
         margin-top: 20px;
         font-size: 20px;
     }
 
     a {
+        margin: 0 auto;
         margin-top: 30px;
-        padding: 0px;
+        padding: 5px;
         list-style: square;
         text-decoration: none;
         color: $color-2;
-        text-decoration: underline;
+        background-color: nth($colores, 5);
         font-size: nth($font-size, 3);
         font-weight: 500;
-
+        border-radius: 8px;
+        width: 100px;
+        text-align: center;
+      
         &:hover {
-            color: nth($colores, 4);
+            color: $color-3;
         }
     }
 
@@ -95,16 +97,21 @@
         margin: 5px;
         padding: 1px;
         margin-top: 40px;
+        transition: 0.5s;
     }
     h3 {
         text-align: center;
     }
+}
+.servicios .tarjeta div:hover{
+        transform: scale(1.1);
 }
 
 .clientes {
     text-align: center;
     background-color: $color-3;
     overflow: hidden;
+    height: 450px;
 
     h1 {
         color: $color-2;
@@ -119,14 +126,16 @@
     }
 
     a {
-        padding: 1px;
+        padding: 5px;
         margin-top: 30px;
-        text-decoration: underline;
+        background-color: nth($colores, 5);
         color: $color-2;
         font-size: nth($font-size, 3);
         font-weight: 500;
+        text-decoration: none;
+        border-radius: 8px;
         &:hover {
-            color: nth($colores, 4);
+            color: nth($colores, 3);
         }
     }
 
@@ -136,7 +145,7 @@
     }
 }
 
-.clientes .tarjeta-clientes {
+.tarjeta-clientes {
     @extend %center;
     flex-wrap: wrap;
     padding: 12px;
@@ -153,8 +162,14 @@
         margin: 5px;
         padding: 1px;
         margin-top: 40px;
-    }
+        transition: 0.5s;
+        
+        }
 }
+.tarjeta-clientes div:hover{
+       transform: scale(1.1);
+}
+
 
 .grid-clientes {
     display: grid;
@@ -175,7 +190,11 @@
 .grid-clientes div {
     position:relative;
     padding: 20px;
+    transition: 2s;
 
+}
+.grid-clientes div:hover {
+    transform: translate(20px, -20px);
 }
 
 .img-1 {
@@ -184,6 +203,7 @@
 
 .img-2 {
     grid-column: 2;
+
 }
 
 .img-3 {
@@ -255,17 +275,20 @@
 
     div {
         a {
-            padding: 1px;
+            padding: 5px;
             margin-top: 30px;
-            text-decoration: underline;
+            background-color: nth($colores, 5);
             color: $color-2;
             font-size: nth($font-size, 3);
             font-weight: 500;
             justify-content: end;
             margin-right: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            
 
             &:hover {
-                color: nth($colores, 4);
+                color: nth($colores, 3);
             }
         }
     }
@@ -289,8 +312,8 @@
 
 .contacto {
     div button {
-        background-color: $color-3;
-        color: $color-2;
+        background-color: $color-5;
+        color: $color-1;
         margin: 10px;
     }
 }
