@@ -53,7 +53,7 @@ header nav ul a:hover {
 }
 
 .hero {
-  background-image: url("../img/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.avif");
+  background-image: url("../img/imagen blur.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,8 +69,21 @@ header nav ul a:hover {
   margin: 10px;
   padding: 10px;
 }
-.hero h2 {
+.hero a {
+  padding: 2px;
   margin-top: 5px;
+  background-color: rgb(84, 85, 162);
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.hero a:hover {
+  color: rgb(195, 216, 223);
+}
+.hero h2 {
+  margin-top: 10px;
 }
 .hero p {
   font-size: 25px;
@@ -101,7 +114,7 @@ header nav ul a:hover {
   text-decoration: none;
   color: black;
   background-color: rgb(84, 85, 162);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   border-radius: 8px;
   width: 100px;
@@ -168,7 +181,7 @@ header nav ul a:hover {
   margin-top: 30px;
   background-color: rgb(84, 85, 162);
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   text-decoration: none;
   border-radius: 8px;
@@ -252,7 +265,7 @@ header nav ul a:hover {
   padding: 5px;
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 200;
   background-color: rgb(195, 216, 223);
   overflow: hidden;
@@ -267,7 +280,7 @@ header nav ul a:hover {
   text-align: start;
   flex-direction: row;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .nosotros div img {
   display: block;
@@ -292,24 +305,22 @@ header nav ul a:hover {
   text-align: justify;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .nosotrosh2 h2 {
   color: black;
   text-align: center;
   margin-top: 40px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .nosotrosh2 div a {
-  padding: 5px;
-  margin-top: 30px;
+  padding: 2px;
+  margin-top: 5px;
   background-color: rgb(84, 85, 162);
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
-  justify-content: end;
-  margin-right: 10px;
   text-decoration: none;
   border-radius: 8px;
 }
@@ -442,11 +453,13 @@ footer img {
 @media screen and (max-height: 720px) and (max-width: 360px) {
   .servicios .tarjeta div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
+    margin: 10px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -568,11 +581,13 @@ footer img {
 @media screen and (max-height: 720px) and (max-width: 360px) {
   .servicios .tarjeta div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
+    margin: 10px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 360px) {

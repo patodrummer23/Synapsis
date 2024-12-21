@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../img/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.avif");
+    background-image: url("../img/imagen\ blur.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     color: $color-1;
-
+    
     h1 {
         font-size: 40px;
         font-weight: 600;
@@ -16,8 +16,23 @@
         padding: 10px;
     }
 
-    h2 {
+    a {
+        padding: 2px;
         margin-top: 5px;
+        background-color: nth($colores, 5);
+        color: $color-2;
+        font-size: nth($font-size, 2);
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 8px;
+
+        &:hover {
+            color: nth($colores, 3);
+        }
+    }
+
+    h2 {
+        margin-top: 10px;
     }
 
     p {
@@ -27,7 +42,6 @@
         margin: 10px;
     }
 }
-
 
 .servicios {
     text-align: center;
@@ -53,7 +67,7 @@
         text-decoration: none;
         color: $color-2;
         background-color: nth($colores, 5);
-        font-size: nth($font-size, 3);
+        font-size: nth($font-size, 2);
         font-weight: 500;
         border-radius: 8px;
         width: 100px;
@@ -134,7 +148,7 @@
         margin-top: 30px;
         background-color: nth($colores, 5);
         color: $color-2;
-        font-size: nth($font-size, 3);
+        font-size: nth($font-size, 2);
         font-weight: 500;
         text-decoration: none;
         border-radius: 8px;
@@ -231,7 +245,7 @@
     padding: 5px;
     text-decoration: none;
     color: $color-2;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 200;
     background-color: $color-3;
     overflow: hidden;
@@ -244,7 +258,7 @@
         text-align: start;
         flex-direction: row;
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
 
     }
 
@@ -272,33 +286,30 @@
     text-align: justify;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
     h2 {
         color: $color-2;
         text-align: center;
         margin-top: 40px;
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     div {
         a {
-            padding: 5px;
-            margin-top: 30px;
+            padding: 2px;
+            margin-top: 5px;
             background-color: nth($colores, 5);
             color: $color-2;
-            font-size: nth($font-size, 3);
+            font-size: nth($font-size, 2);
             font-weight: 500;
-            justify-content: end;
-            margin-right: 10px;
             text-decoration: none;
             border-radius: 8px;
 
-
             &:hover {
-                color: nth($colores, 3);
-            }
+            color: nth($colores, 3);
+           }
         }
     }
 }

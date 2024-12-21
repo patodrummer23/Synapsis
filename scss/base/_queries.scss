@@ -49,11 +49,13 @@
 
     .servicios .tarjeta div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: top;
         flex-wrap: wrap;
         text-align: center;
         flex-direction: column;
+        margin: 10px;
+        gap: 10px;
     }
 
 }
