@@ -276,7 +276,7 @@ header nav ul a:hover {
   text-align: center;
 }
 .nosotros h1 {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: start;
   flex-direction: row;
   padding: 10px;
